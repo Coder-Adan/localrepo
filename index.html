@@ -6,6 +6,180 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- PS C:\Users\Adan\Desktop\New folder (4)> git clone https://github.com/Coder-Adan/firstrepo.git
+Cloning into 'firstrepo'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (9/9), done.
+PS C:\Users\Adan\Desktop\New folder (4)> git add .
+warning: adding embedded git repository: firstrepo
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> firstrepo
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached firstrepo
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config advice.addEmbeddedRepo false"
+PS C:\Users\Adan\Desktop\New folder (4)> ls
+
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/22/2024   4:49 AM                firstrepo
+
+
+PS C:\Users\Adan\Desktop\New folder (4)> cd firstrepo
+PS C:\Users\Adan\Desktop\New folder (4)\firstrepo> ls
+
+
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        11/22/2024   4:49 AM             51 README.md
+
+
+PS C:\Users\Adan\Desktop\New folder (4)\firstrepo> ls -a
+PS C:\Users\Adan\Desktop\New folder (4)\firstrepo> Get-ChildItem -Force
+>> 
+
+
+    Directory: C:\Users\Adan\Desktop\New folder (4)\firstrepo
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d--h--        11/22/2024   4:49 AM                .git
+-a----        11/22/2024   4:49 AM             51 README.md
+
+
+PS C:\Users\Adan\Desktop\New folder (4)\firstrepo> Get-ChildItem -Force
+
+
+    Directory: C:\Users\Adan\Desktop\New folder (4)\firstrepo
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d--h--        11/22/2024   4:49 AM                .git
+-a----        11/22/2024   4:49 AM             51 README.md
+
+
+PS C:\Users\Adan\Desktop\New folder (4)\firstrepo> Is -Force
+of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Is -Force
++ ~~
+    + CategoryInfo          : ObjectNotFound: (Is:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\Adan\Desktop\New folder (4)\firstrepo> ls -Force
+
+
+    Directory: C:\Users\Adan\Desktop\New folder (4)\firstrepo
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d--h--        11/22/2024   4:49 AM                .git
+-a----        11/22/2024   4:49 AM             51 README.md
+
+
+PS C:\Users\Adan\Desktop\New folder (4)\firstrepo> git status
+On branch main
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Adan\Desktop\New folder (4)\firstrepo> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Adan\Desktop\New folder (4)\firstrepo> git add .
+PS C:\Users\Adan\Desktop\New folder (4)\firstrepo> git status
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+        modified:   README.md
+        new file:   index.html
+
+PS C:\Users\Adan\Desktop\New folder (4)\firstrepo> git commit -m"added"
+[main 665608f] added
+ create mode 100644 index.html
+PS C:\Users\Adan\Desktop\New folder (4)\firstrepo> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\Adan\Desktop\New folder (4)\firstrepo> git push origin main
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 474 bytes | 118.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Coder-Adan/firstrepo.git
+   18de04f..665608f  main -> main
+PS C:\Users\Adan\Desktop\New folder (4)\firstrepo> cd ..
+PS C:\Users\Adan\Desktop\New folder (4)> mkdir anotherrep
+
+
+d-----        11/22/2024   5:04 AM                anotherrep
+
+PS C:\Users\Adan\Desktop\New folder (4)> cd anotherrep
+PS C:\Users\Adan\Desktop\New folder (4)\anotherrep> ls -Force
+PS C:\Users\Adan\Desktop\New folder (4)\anotherrep> ls
+PS C:\Users\Adan\Desktop\New folder (4)\anotherrep> Get-ChildItem -Force
+PS C:\Users\Adan\Desktop\New folder (4)\anotherrep> git init
+Initialized empty Git repository in C:/Users/Adan/Desktop/New folder (4)/anotherrep/.git/
+PS C:\Users\Adan\Desktop\New folder (4)\anotherrep> ls -Force
+
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+
+
+[master (root-commit) 528b937] ok
+ 1 file changed, 11 insertions(+)
+PS C:\Users\Adan\Desktop\New folder (4)\anotherrep> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\Adan\Desktop\New folder (4)\anotherrep> git remote add origin https://github.com/Coder-Adan/localrepo.git
+origin  https://github.com/Coder-Adan/localrepo.git (fetch)
+git: 'branck' is not a git command. See 'git --help'.
+The most similar command is
+        branch
+PS C:\Users\Adan\Desktop\New folder (4)\anotherrep> git branch
+* master
+PS C:\Users\Adan\Desktop\New folder (4)\anotherrep> git branch -M main
+PS C:\Users\Adan\Desktop\New folder (4)\anotherrep> git branch
+* main
+PS C:\Users\Adan\Desktop\New folder (4)\anotherrep> git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 358 bytes | 179.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Coder-Adan/localrepo.git
+ * [new branch]      main -> main
+PS C:\Users\Adan\Desktop\New folder (4)\anotherrep>  -->
 </body>
 </html>
